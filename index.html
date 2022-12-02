@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSignment No_18</title>
+</head>
+<body>
+    <script>
+        //                               Exercise = 01
+        function Function(x)
+        {
+            const square = (number) => number ** 2;
+            return console.log(square(x))
+        }
+        Function(2);
+        //Using Function for other variable
+        var y = 7;
+        Function(y);
+
+        //                               Exercise = 02
+        function Double()
+        {
+            let value = prompt("Please Write a input Parameter");
+            result = value*2;
+            return console.log(result);
+        }
+        Double();
+
+        //                               Exercise = 03
+        function myFunction()
+        {
+            let name = prompt("What is your Name?");
+            let age = prompt("What is your age?");
+            name += ' ' + age; 
+            console.log(name);
+        }
+        myFunction();
+
+        //                               Exercise = 04
+        function arrow()
+        {
+            let age = prompt("Write Your Age Please.....!");
+
+            if(age <= 0)
+                {
+                    console.log("Please Write A Correct Age....!");
+                }
+            else if(age < 18)
+                {
+                    console.log("Baby");
+                }
+            else if(age >= 18)
+                {
+                    console.log("Adult");
+                }
+        }
+        arrow();
+
+        //                               Exercise = 05
+        function arrow(num)
+        {
+            var result = num + num;
+
+            console.log(result);
+        }
+        arrow(2);
+        arrow(3);
+        arrow(4);
+        arrow(5);
+        arrow(6);
+
+        //                               Exercise = 06
+        const cities =
+     {
+        city1:"Karachi",
+        city2:"Lahore",
+        city3:"Islamabad",
+        city4:"Multan",
+        city5:"Mansehra",
+    }; 
+
+        let txt = "";
+        for (let x in cities)
+            {
+                txt += cities[x] + "\n";
+            }
+        console.log(txt);
+
+         //                               Exercise = 07
+         const citie = ["Karachi", "Lahore", "Multan", "Mansehra"];
+        let text = "";
+        for (let x of citie)
+        {
+            text += x + "\n";
+        }
+        console.log(text);
+
+
+         //                               Exercise = 08
+         function AreaOfRectangle(length, width)
+        {   
+            var area= length * width ;
+                
+            console.log("Area Of Rectangle Is: "  + area);
+        }
+        AreaOfRectangle(4, 6);
+        AreaOfRectangle(5, 8);
+        AreaOfRectangle(3, 7);
+
+
+    </script>
+</body>
+</html>
